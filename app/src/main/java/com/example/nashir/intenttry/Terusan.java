@@ -16,6 +16,7 @@ public class Terusan extends Activity{
     public void onCreate (Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.layar2);
+
         TextView text =(TextView)findViewById(R.id.textView);
         Button go =(Button)findViewById(R.id.button2);
         Intent baru=this.getIntent();

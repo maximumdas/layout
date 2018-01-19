@@ -12,12 +12,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Intent i =new Intent(MainActivity.this, Terusan.class);
-        i.putExtra("pesan","Mantap gan");
         Button to =(Button)findViewById(R.id.button);
         to.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent i =new Intent(MainActivity.this, Terusan.class);
+                i.putExtra("pesan","Mantap gan");
                 startActivity(i);
             }
         });
